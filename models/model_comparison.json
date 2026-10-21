@@ -1,0 +1,91 @@
+{
+    "champion_model": "Gradient Boosting",
+    "feature_names": [
+        "Age",
+        "Tenure",
+        "Usage Frequency",
+        "Support Calls",
+        "Payment Delay",
+        "Total Spend",
+        "Last Interaction",
+        "Spend_per_Tenure",
+        "Support_Intensity",
+        "High_Delay_Flag",
+        "Gender_Male",
+        "Subscription Type_Premium",
+        "Subscription Type_Standard",
+        "Contract Length_Monthly",
+        "Contract Length_Quarterly"
+    ],
+    "trained_timestamp": "2026-10-21 19:50:50",
+    "models": {
+        "Logistic Regression": {
+            "train_time_seconds": 0.43,
+            "validation_metrics": {
+                "accuracy": 0.8934,
+                "precision": 0.9232,
+                "recall": 0.8857,
+                "f1": 0.9041,
+                "roc_auc": 0.959
+            },
+            "external_test_metrics": {
+                "accuracy": 0.5711,
+                "precision": 0.525,
+                "recall": 0.9908,
+                "f1": 0.6864,
+                "roc_auc": 0.6902
+            }
+        },
+        "Decision Tree": {
+            "train_time_seconds": 1.46,
+            "validation_metrics": {
+                "accuracy": 0.9973,
+                "precision": 0.9999,
+                "recall": 0.9953,
+                "f1": 0.9976,
+                "roc_auc": 0.9994
+            },
+            "external_test_metrics": {
+                "accuracy": 0.5062,
+                "precision": 0.4896,
+                "recall": 0.9984,
+                "f1": 0.657,
+                "roc_auc": 0.5309
+            }
+        },
+        "Random Forest": {
+            "train_time_seconds": 5.96,
+            "validation_metrics": {
+                "accuracy": 0.9926,
+                "precision": 0.9999,
+                "recall": 0.9871,
+                "f1": 0.9935,
+                "roc_auc": 0.9999
+            },
+            "external_test_metrics": {
+                "accuracy": 0.5111,
+                "precision": 0.4921,
+                "recall": 0.9982,
+                "f1": 0.6592,
+                "roc_auc": 0.7209
+            }
+        },
+        "Gradient Boosting": {
+            "train_time_seconds": 1.42,
+            "validation_metrics": {
+                "accuracy": 0.9999,
+                "precision": 1.0,
+                "recall": 0.9998,
+                "f1": 0.9999,
+                "roc_auc": 1.0
+            },
+            "external_test_metrics": {
+                "accuracy": 0.5034,
+                "precision": 0.4882,
+                "recall": 0.9988,
+                "f1": 0.6558,
+                "roc_auc": 0.7295
+            }
+        }
+    }
+}

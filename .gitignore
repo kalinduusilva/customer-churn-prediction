@@ -1,0 +1,40 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environments
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Raw Data & Compressed Archives
+archive/
+archive.zip
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# Processed Data Arrays (Large binaries)
+data/processed/*.npz
+
+# Operating System & IDE Artifacts
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# Jupyter Notebook & IPython checkpoints
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# Logs & Temporary Files
+*.log
+*.tmp
+*.bak
+.env
