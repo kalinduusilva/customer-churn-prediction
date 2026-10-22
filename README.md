@@ -18,7 +18,7 @@
 *Aspiring AI & Machine Learning Engineer*  
 
 - **GitHub**: [github.com/kalinduusilva](https://github.com/kalinduusilva)
-- **LinkedIn**: [linkedin.com/in/kalindumihiranga](https://linkedin.com/in/kalindumihiranga)
+- **LinkedIn**: [linkedin.com/in/kalindusilva](https://www.linkedin.com/in/kalindusilva/)
 - **Project Repository**: [Customer Churn Prediction System](https://github.com/kalinduusilva/customer-churn-prediction)
 
 ---
