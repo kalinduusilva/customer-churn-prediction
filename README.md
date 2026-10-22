@@ -338,6 +338,13 @@ python scripts/04_train_models.py
 
 ### 5. Launch the Streamlit Web Application
 
+**Option A: One-Click Launcher (Windows)**
+Simply double-click [`run_app.bat`](run_app.bat) in the root directory or run in your terminal:
+```cmd
+run_app.bat
+```
+
+**Option B: Standard Terminal Execution**
 ```bash
 streamlit run app.py
 ```
