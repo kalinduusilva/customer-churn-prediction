@@ -20,13 +20,16 @@ if not exist ".venv\Scripts\python.exe" (
     exit /b 1
 )
 
+:: Free port 8501 if an existing or hung instance is holding it
+powershell -NoProfile -ExecutionPolicy Bypass -Command "Get-NetTCPConnection -LocalPort 8501 -State Listen -ErrorAction SilentlyContinue | ForEach-Object { Stop-Process -Id $_.OwningProcess -Force -ErrorAction SilentlyContinue }" >nul 2>&1
+
 :: Activate environment and run Streamlit
 echo [1/2] Activating Python virtual environment...
 call .venv\Scripts\activate.bat
 
-echo [2/2] Launching Streamlit dashboard at http://localhost:8501...
+echo [2/2] Launching Streamlit dashboard...
 echo.
-python -m streamlit run app.py --server.port 8501
+python -m streamlit run app.py
 
 if %ERRORLEVEL% NEQ 0 (
     echo.
